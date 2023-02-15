@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./aab.ico">  <!--Esta etiqueta la encontraremos en todos los documentos html, es el icono de nuestra pagina en el navegador-->
+    <link rel="stylesheet" href="./CSS/estilo.css"><!--En esta linea, pongo el documento css de todos los archivos hmtl, para poder dar estilo a mi web-->
+   
+    <title>Indice</title><!--Aquí encontramos el titulo del documento html-->
+</head>
+<body>
+     <!--El esquema estructural que utilizo en todos mis html, esta basado en la estructura de html5-->
+
+    <div class="wrapper"><!--Este elemento común se utiliza para almacenar todos los elementos del html5 en un mismo bloque-->
+        <header>
+            <nav><!--Aquí es donde encontramos el menu común en todos los documentos html, siendo así que nos permite desplazarnos entre los otros documentos y facilita además su posterior edición.-->
+                <ul class="menu">
+                <!--He intentado solucionarlo y pelearme, pero no consigo solucionar o encontrar el error en este bloque-->
+                <!--Al parecer, debe ser visionado en una pantalla tan grnade como el monitor de mi casa, por un error de posicionamiento que no logro solucionar-->>
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                    <li><a href="./multimedia.html">Multimedia</a></li>
+                    <li><a href="./criticas.html">Críticas</a></li>
+
+
+                </ul> 
+               </nav>
+       </header>
+       
+  <main>
+             
+       <!--Con las etiquetas figure, busco combinar un elemento img con el elemento h3+p para producir una imagen que guarda un texto interno (gracias a la etiqueta del CSS3 :hoover se muestra en pantalla el texto)-->
+       <!--Dado que no se puede usar JS he buscado una forma similar de producir una transicion efecto cortina con una etiqueta seccionadora de raiz ifigure-->
+       <!--figure es una etiqueta externa al documento principal-->>
+<div class="series">
+    <h1><u><i>
+       <span class="one">MIS</span>   
+       <span class="two">SERIES</span>
+       <span class="three">FAVORITAS</span>
+    </i></u></h1>
+    <div class="up">
+        <div class="first">
+            <figure class="container">
+                <img src="/img/BB.jpeg" alt=""/>
+                <figcaption><!--ES la etiqueta son-child de figure, dado que esta es la que posee el contenido dinamico-->
+                    <!--Siempre se utiliza como figura son de figure, dado que sirve para incluir texto a una imagen-->
+                    <h3><i><u>Breaking Bad:</u></i></h3>
+                    <p>Tras cumplir 50 años, Walter White , se entera de que tiene <strong>cáncer de pulmón</strong>, la brutal noticia lo 
+                        impulsa a dar un drástico cambio a su vida.</p>
+                </figcaption>
+                </figure><!--Esta estructura esta basada en DOM-->
+        </div>
+        <div class="second">
+            <figure class="container">
+                <img src="/img/RM.jpeg" alt=""/>
+                <figcaption>
+                    <h3><i><u>RICK Y MORTY:</u></i></h3>
+                    <p>Después de haber estado desaparecido durante casi 20 años, <strong>Rick Sánchez llega de imprevisto a la puerta de la casa de su hija Beth y se va a vivir con ella </strong> y su familia utilizando el garaje como su laboratorio personal.</p>
+                </figcaption>
+                </figure>
+        </div>
+       </div>
+        <div class="down">
+            <div class="third">
+                <figure class="container">
+                    <img src="/img/GT.jpg" alt=""/>
+                    <figcaption>
+                        <h3><i><u>Juego de Tronos:</u></i></h3>
+                        <p>Los siete reinos que conforman el territorio continental de Poniente son el Norte regido por la casa Stark; el de la Montaña y el Valle por los Arryn; el de las Islas y los Ríos, por los Greyjoy; el de la Roca, por los Lannister.</p>
+                    </figcaption>
+                    </figure>
+            </div>
+            <div class="forth">
+                <figure class="container">
+                    <img src="/img/RT.jpeg" alt=""/>
+                    <figcaption>
+                        <h3><i><u>MR ROBOT:</u></i></h3>
+                        <p>
+                           <i>Elliot Alderson</i> , un brillante programador con problemas de ansiedad social, trabaja como ingeniero de ciberseguridad de día y como justiciero de noche. Su vida da un giro cuando unos ciberterroristas lo reclutan.</p>
+                    </figcaption>
+                    </figure>
+            </div>
+        </div>
+</div>
+   
+            </main>
+
+            <footer class="footer"><!--Aquí encontramos la barra común donde tras su edicion, situare de manera adyacente otros enlaces para poder aportar informacion personal mia.-->
+                <div class="container">
+                    <div class="row">
+                        <div class="footer-col">
+                            <h4>Proyecto</h4>
+                            <ul>
+                                <li><a href="https://webmii.com/people?n=%22Adrian%20Aracil%20Bataller%22#gsc.tab=0&gsc.q=%22Adrian%20Aracil%20Bataller%22&gsc.sort=date">about us</a></li>
+                                <li><a href="https://es.wallapop.com/app/user/adriana-53691565-9wzvg7owvdzl/published">our services</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4>get help</h4>
+                            <ul>
+                                <li><a href="https://es.wikipedia.org/wiki/Preguntas_frecuentes">FAQ</a></li>
+                                <!--En el apartado de abajo, he incluido la etiqueta del correo, como se solicita en el documento del proyecto-->
+                                <li><a href="mailto:adrarabat@alu.edu.gva.es">E-mail</a></li>
+
+                            </ul>
+                        </div>
+                       
+                        <div class="footer-col">
+                            <h4>Mis social medias</h4>
+                            <div class="social-links">
+                                <a href="https://www.facebook.com/adrian.xtv/" id="facebook"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://twitter.com/ADRIANXTV96"><i class="fab-fa-twitter"></i></a>
+                                <a href="https://www.instagram.com/aracil96/"><i class="fab fa-instagram"></i></a>
+                                <a href="https://www.linkedin.com/in/adrian-aracil-573b38154/"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+           </footer>
+       
+    </div>
+ 
+</body>
+</html> 

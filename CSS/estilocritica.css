@@ -1,0 +1,354 @@
+*{
+
+  margin: 0%;
+
+  padding: 0%;
+}
+
+body {
+    /* 
+	En estas etiquetas, busco asegurar que el fondo no se me duplique(como genera de fabrica), 
+	a la vez que aporto un diseño general al cuerpo de la web, lo interno en la etiqueta body
+	*/
+
+    background: #fffdfd;
+    background-image: url(../img/background1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    line-height: 1.5;
+  	font-family: 'Poppins', sans-serif;
+ 
+}
+
+.UP{
+  
+  overflow: hidden;
+	width: 100% ;
+  margin-left: 8%;
+  padding: 1%;
+
+}
+
+.DOWN {
+  
+  overflow: hidden;
+	width: 100%;
+
+}
+
+.RM , .BB , .GT , .MR{
+  
+  float: left;
+  width: 20%;
+  height: 20%;
+  margin: 10px;
+
+}
+
+
+footer{
+	
+  position: absolute;
+	bottom: 0;
+	width: 100%;
+	
+  }
+  /*La etiqueta footer,tiene los elementos determinados para conservar la barra del footer siempre bajo del documento*/
+
+.container{
+	
+  max-width: 90%;
+  max-height: 20%;
+	margin:auto;
+
+}
+.row{
+
+  display: flex;
+	flex-wrap: wrap;
+
+}
+ul{
+
+  list-style: none;
+
+}
+.footer{
+	
+  background-color: #24262b;
+    padding: 0.01% 0;
+      
+  }
+/*
+.footer-col es una etiqueta destinada a la edicion de los elementos internos de la barra baja de footer(los elementos internos de h4 y las listas desordenadas para las redes sociales y los enlaces externos).
+*/
+.footer-col{
+
+  width: 25%;
+  padding: 0 15px;
+
+}
+.footer-col h4{
+
+  font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 5%;
+	font-weight: 500;
+	position: relative;
+
+}
+
+.footer-col h4::before{
+
+  content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+
+}
+.footer-col ul li:not(:last-child){
+
+  margin-bottom: 10px;
+
+}
+.footer-col ul li a{
+
+  font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+
+}
+.footer-col ul li a:hover{
+
+  color: #ffffff;
+	padding-left: 8px;
+
+}
+.footer-col .social-links a{
+
+  display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+
+}
+.footer-col .social-links a:hover{
+
+  color: #24262b;
+	background-color: #ffffff;
+
+}
+
+/*
+las etiquetas @font-face,@import url o @media se utilizan para dar formato, por lo general heredado de una fuente externa
+*/
+@media(max-width: 7%){
+
+  .footer-col{
+
+    width: 15%;
+    margin-bottom: 3%;
+
+  }
+}
+@media(max-width: 574px){
+  
+    .footer-col{
+
+      width: 10%;
+
+    }
+}
+/*---------------------aquí termina el elemento común en todos los CSS3 del proyecto-------------------------*/
+
+h1{
+
+text-align: center;
+
+}
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);
+
+figure.container {
+
+  font-family: 'Raleway', Arial, sans-serif;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  min-width: 220px;
+  max-width: 310px;
+  max-height: 220px;
+  width: 100%;
+  color: #ffffff;
+  text-align: left;
+  background-color: #07090c;
+  font-size: 16px;
+  -webkit-perspective: 50em;
+  perspective: 50em;
+
+}
+/*
+La etiqueta figure, representa la imagen con texto de cada serie que he incluido en mi proyecto.
+*/
+figure.container * {
+
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+
+}
+figure.container img {
+
+  opacity: 1;
+  width: 100%;
+  -webkit-transform-origin: 50% 100%;
+  -ms-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+
+}
+figure.container figcaption {
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  -webkit-transform: rotateX(-90deg);
+  transform: rotateX(-90deg);
+  -webkit-transform-origin: 50% -50%;
+  -ms-transform-origin: 50% -50%;
+  transform-origin: 50% -50%;
+  z-index: 1;
+  opacity: 0;
+  padding: 20px 30px;
+
+}
+
+figure.container h3, figure.container p {
+
+  line-height: 1.5em;
+
+}
+
+figure.container h3 {
+
+  margin: 0;
+  font-weight: 800;
+  text-transform: uppercase;
+
+}
+figure.container p {
+
+  font-size: 0.8em;
+  font-weight: 500;
+  margin: 0 0 15px;
+
+}
+figure.container .more {
+
+  border: 2px solid #ffffff;
+  padding: 0.5em 1em;
+  font-size: 0.8em;
+  text-decoration: none;
+  color: #ffffff;
+  display: inline-block;
+
+}
+figure.container .more:hover {
+
+  background-color: #ffffff;
+  color: #000000;
+
+}
+figure.container:hover img, figure.container.hover img {
+  
+  -webkit-transform: rotateX(90deg);
+  transform: rotateX(90deg);
+  opacity: 0;
+
+}
+figure.container:hover figcaption,figure.container.hover figcaption {
+  
+  -webkit-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+  opacity: 1;
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+
+}   
+/*  Aquí se encuentra el etiquetado para el marcado general de la web*/
+ 
+body {
+    /* 
+	En estas etiquetas, busco asegurar que el fondo no se me duplique(como genera de fabrica), 
+	a la vez que aporto un diseño general al cuerpo de la web, lo interno en la etiqueta body
+	*/
+    background: #fffdfd;
+    background-image: url(../img/background1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    line-height: 1.5;
+  	font-family: 'Poppins', sans-serif;
+ 
+}
+
+
+.menu {
+/*
+Esta etiqueta, junto a todas las definidas como menu, dentro de todos los estilos de la carpeta CSS, son los elementos del div que introduje para la barra nav 
+*/
+list-style: none;
+padding: 0%;
+background: #092327;
+width: 90%;
+max-width: 1000px;
+margin: auto;
+text-align: center;
+
+}
+
+.menu li a {
+
+  text-decoration: none;
+  color: white;
+  padding: 20px;
+  display: block;
+  text-align: center;
+
+}
+
+.menu li {
+
+    display: inline-block;
+    text-align: center;
+
+}
+/*Esta para el fondo al pasar el raton*/
+
+.menu li a:hover {
+
+  background-color: #ef8354;
+  text-align: center;
+  
+}

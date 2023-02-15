@@ -1,0 +1,253 @@
+*{
+    
+    margin: 0px;
+    padding: 0px;
+     
+}
+
+body {
+    
+    font-family: Arial, Helvetica;
+    background: #fffdfd;
+    background-image: url(../img/background1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    line-height: 1.5;
+ 
+}
+
+.menu {
+
+    list-style: none;
+    padding: 0%;
+    background: #092327;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+
+
+}
+
+.menu li a {
+
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    display: block;
+    text-align: center;
+
+}
+
+.menu li {
+
+    display: inline-block;
+    text-align: center;
+
+}
+
+.menu li a:hover {
+
+    background-color: #ef8354;
+    text-align: center;
+}
+
+h2{
+
+    left: 60%;
+    display: block;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight:bolder;
+}
+
+
+main {
+    margin: 0px auto;
+    padding: 40px;
+}
+ 
+/*
+EN ESTE DIV INTRODUZCO LOS ELEMENTOS CENTRALES DEL DIV PADRE
+*/
+.formulario {
+    padding: 50px;
+    border: 20px solid #B0BEC5;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    background-color: #fffdfd;
+}
+
+/*
+AQUI INTRODUZCO LA PERSONALIZACION DE LOS ELEMENTOS TEXT / EMAIL / PASSWORD 
+*/
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    display: block;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: solid #BBDEFB;
+    background: none;
+    width: 90%;
+    margin-bottom: 3%;
+    margin-top: 3%;
+    font-size: 16px;
+}
+
+/*
+EL "BORDER" REPRESENTA EL BORDE VISIBLE DEL CUADRADO DENTRO DEL DIV HIJO 
+*/
+.label1 {
+    color: #303f9f;
+}
+
+.label2 {
+    color: #303f9f;
+    margin-left: 1%;
+    cursor: pointer;/* PARA CUANDO CLICKEMOS EL CURSOR REALICE UN CAMBIO VISUAL*/
+    font-size: 16px;
+}
+
+#label3 {
+    color: #303f9f;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.label2:hover {
+    background-color: #BBDEFB;
+}
+
+#label3:hover {
+    background-color: #BBDEFB;
+}
+
+input[type="radio"] {
+    margin-left: 2%;
+}
+
+input[type="checkbox"] {
+    margin-top: 2%;
+    margin-left: 2%;
+}
+
+input[type="submit"] {
+    margin-top: 3%;
+    background-color: #303f9f;
+    color: white;
+    text-align: center;
+    width: 75%;
+    height: 7vh;
+    margin-left: 10%;
+    border: 1px solid #b6b6b6;
+}
+/*LA ETIQUETA #ES PARA IDENTIFICAR IDs, LA ETIQUETA .DIVs Y AL SOLO NOMBRAR LA ETIQUETA, 
+MODIFICAMOS LO QUE ESTA ENGLOBA*/
+#desc{
+    width: 90%;
+    margin-bottom: 3%;
+    margin-top: 3%;
+    font-size: 16px;
+    display: block;
+}
+
+
+/*
+LAS SIGUIENTES ETIQUETAS CORRESPONDEN AL ELEMENTO DEL FOOTER, EL CUAL HE DETALLADO MÁS EN EL CSS ESTILO DEL PRIMERO HTML
+*/
+
+
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+    }
+}
+@media(max-width: 574px){
+  
+    .footer-col{
+        width: 100%;
+    }
+}
+/*
+:HOOVER SE USA PARA CUANDO ACERCAMOS EL CURSOR POR EL ELEMENTO, LO DETECTE SIN NECESIDAD DE ACTIVARLO.
+*/
